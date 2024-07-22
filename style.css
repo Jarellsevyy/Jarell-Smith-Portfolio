@@ -2,3 +2,28 @@ html {
   height: 100%;
   width: 100%;
 }
+
+
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1710609942195-b9dab8f48fc6?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover; 
+  background-position: center;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  background-color: pink;
+}
+
+h1,
+p,
+li
+{
+  color: white;
+}
+
+  
