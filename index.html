@@ -15,7 +15,7 @@
 
 
 <body
-  style="background-image: url('https://images.unsplash.com/photo-1710609942195-b9dab8f48fc6?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: 'Ga Maamli', sans-serif;">
+  style="background-image: url('5acdc8d4d898277dc853157180e566d5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: 'Ga Maamli', sans-serif;">
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: forestgreen !important;">
     <div class="container-fluid">
@@ -26,11 +26,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav" style="color: white !important;">
-          <a class="nav-link active" aria-current="page" href="#" style="color: white !important;">Home</a>
-          <a class="nav-link" href="#" style="color: white !important;">About</a>
-          <a class="nav-link" href="#" style="color: white !important;">Skills</a>
-          <a class="nav-link" href="#" style="color: white !important;">Contact</a>
-          <a class="nav-link" target= "_blank" href='https://Jarellsevyy.github.io/Jarell Smith Portfolio/plantid.html' style="color: white !important;">PLANT ID</a>
+          <a class="nav-link active" aria-current="page" href="/index.html" style="color: white !important;">Home</a>
+          <a class="nav-link" href="/index.html" style="color: white !important;">About</a>
+          <a class="nav-link" href="/index.html" style="color: white !important;">Skills</a>
+          <a class="nav-link" href="/index.html" style="color: white !important;">Contact</a>
+          <a class="nav-link" href='/plantid.html' style="color: white !important;">PLANT ID</a>
         </div>
       </div>
     </div>
@@ -90,18 +90,36 @@
   <!-- this is the end of the contact section  -->
 
   <!-- this is the start of the app verification section -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col text-center">
-          <h1 style='color: white;'>Age Verification</h1>
-          <button onclick="areYouOldEnough()" type="button" class="btn btn-primary" id="contact">
-            Verify my age
-          </button>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col text-center">
+        <h1 style='color: white;'>Age Verification</h1>
+        <button onclick="verifyAge()" type="button" class="btn btn-primary" id="contact">
+          Verify my age
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- this is the end of the app verfication -->
+
+  <!-- This is the start of the todo list  -->
+  <div class="container">
+    <div class="row text-center pt-5">
+      <div class="col-6 offset-3">
+        <h1 style="color: white;">To-Do List</h1>
+        <div class="input-group d-flex justify-content-center">
+          <input type="text" id="taskInput" placeholder="Enter a new task...">
+          <button id="addButton">Add Task</button>
         </div>
       </div>
     </div>
-
-
+    <div class="row text-center">
+      <div class="col">
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- This is the end of the todo app  -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -110,6 +128,7 @@
 
 
   <script src="/script.js"></script>
+
 </body>
 
 </html>
